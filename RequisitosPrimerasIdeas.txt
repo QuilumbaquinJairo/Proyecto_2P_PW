@@ -1,5 +1,5 @@
-equipo
-contactos(formulario que envie correo, mapa de la ubicacion)
+equipo (Wily)
+contactos(formulario que envie correo, mapa de la ubicacion) (Rick)
 
 registro (crear usuario y guardar en base de datos){
 base de datos{
@@ -11,7 +11,7 @@ de la base de datos se crea el anuncio
 }
 
 inicio
-listings(galeria de las casas, con base de datos?)
+listings(galeria de las casas, con base de datos?) (Jairo)
  
 preguntas para mañana:
 
