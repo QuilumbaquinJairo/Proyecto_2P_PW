@@ -1,0 +1,28 @@
+equipo
+contactos(formulario que envie correo, mapa de la ubicacion)
+
+registro (crear usuario y guardar en base de datos){
+base de datos{
+forma para datos del usuario
+forma para datos de la casa
+forma para las fotos del anuncio
+de la base de datos se crea el anuncio
+}
+}
+
+inicio
+listings(galeria de las casas, con base de datos?)
+ 
+preguntas para mañana:
+
+como pvtas hacemos el registro con base de datos?
+como se genera la pagina desde la base de datos?
+se puede usar javascript?
+que suba las rubricas para la evaluacion
+
+Paleta de colores:
+#46237A
+#673DA6
+#46237A
+#414042
+#F6F6F6
