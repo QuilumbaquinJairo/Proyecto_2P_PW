@@ -1,0 +1,110 @@
+/*------------------cabecera---------------------*/
+
+.cabecera {
+    position: fixed;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 999; /* Agrega una alta z-index para asegurarte de que la barra de navegación esté en primer plano */
+  }
+  
+  .logoimg {
+    margin-left: 40px;
+    padding: 10px;
+  }
+  
+  .navbar {
+    height: fit-content;
+    margin: 1rem;
+    padding: 13px 10px;
+  }
+  
+  .navbar a {
+    padding: 0 1rem;
+    width: max-content;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Roboto', 'Courier New', Courier, monospace;
+    color: #46237A;
+    z-index: 1;
+    transition: transform 0.3s; /* Agrega una transición suave para el cambio de escala */
+  }
+  
+  .navbar a:hover {
+    color: blueviolet;
+    transform: scale(3); /* Incrementa la escala del texto al pasar el mouse */
+  }
+/*---------------------Estilo del cuerpo---------------------------*/
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgba(70, 35, 122, 0.6);
+    
+}
+
+.fondo-principal{
+    background-color: rgba(70, 35, 122, 0.6);
+    mix-blend-mode: overlay;
+}
+  
+/*.fondo-principal::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(70, 35, 122, 0.6); /* Color morado con 60% de opacidad 
+  }*/
+
+.textologo{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: space-around;
+    color: white;
+    font-size: 70px;
+    font-family: 'Roboto','Courier New', Courier, monospace;
+}
+
+.textologo button{
+    width: 236px;
+    height: 72px;
+    border: none;
+    background-color: #46237A;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    position: absolute;
+    margin-top: 33rem;
+    margin-left: 20rem;
+}
+
+.textologo p {
+    transition: transform 500ms;
+  }
+  
+  .textologo p:hover {
+    transform: scale(1.02);
+  }
+
+/*--------------pie-de pagina------------*/
+
+.pie-pagina{
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+}
+
+.pie-pagina div{
+    margin: auto;
+}
+
+.pie-pagina img{
+    margin: 0 20px;
+}
+
