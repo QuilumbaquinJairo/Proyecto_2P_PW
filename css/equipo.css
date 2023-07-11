@@ -9,7 +9,7 @@ body {
 
 body::after {
     content: "";
-    background: linear-gradient(rgba(70, 35, 122, 0.6), rgba(70, 35, 122, 0.6)), url(../img/Fondos/equipo1.jpg);
+    background: linear-gradient(rgba(70, 35, 122, 0.6), rgba(70, 35, 122, 0.6)), url(../img/Fondos/Equipo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
