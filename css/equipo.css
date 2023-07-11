@@ -1,0 +1,136 @@
+p {
+    font-family: 'Inter', sans-serif, 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+body {
+    position: relative;
+}
+
+body::after {
+    content: "";
+    background: linear-gradient(rgba(70, 35, 122, 0.6), rgba(70, 35, 122, 0.6)), url(../img/Fondos/equipo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+.contenedor_mayor {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+}
+
+.equipo_titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.equipo_titulo p {
+    font-size: 60px;
+    font-family: 'Inter', 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+}
+
+.contenedor {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 0 4rem 8rem 4rem;
+    border-radius: 20px;
+}
+
+.datop {
+    color: rgba(65, 64, 66, 0.80);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: justify;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+
+.nombre {
+    color: #000;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0.5rem;
+}
+
+.info {
+    color: rgba(65, 64, 66, 0.80);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: justify;
+}
+
+.equipo1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: justify;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.equipo2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: justify;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.equipo3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: justify;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.equipo1 img {
+    width: 179px;
+    height: 166px;
+    margin-right: 2rem;
+}
+
+.equipo2 img {
+    width: 179px;
+    height: 166px;
+    margin-left: 2rem;
+}
+
+.equipo3 img {
+    width: 179px;
+    height: 166px;
+    margin-right: 2rem;
+}
