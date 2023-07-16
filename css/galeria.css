@@ -30,7 +30,7 @@ body{
     background-color: white;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    margin: 0 4rem 8rem 4rem;
+    margin: 0 auto 8rem auto;
     border-radius:20px;
 }
 
