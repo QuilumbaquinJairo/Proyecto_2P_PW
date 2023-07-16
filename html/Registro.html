@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="../css/reset.css">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/registro.css">
+
+
+    <title>Equipo</title>
+    <link rel="icon" type="image/png" href="../img/iconos/Logo_solo_1-removebg-preview.ico">
+</head>
+
+<body>
+
+    <header>
+        <div class="cabecera">
+            <div class="logoimg">
+                <a href="index.html"><img src="../img/Logos/Logo_9.png" alt="logo-empresa"></a>
+            </div>
+            <div class="navbar">
+                <nav>
+                    <a href="../index.html">inicio</a>
+                    <a href="Equipo.html">equipo</a>
+                    <a href="Galeria.html">galeria</a>
+                    <a href="javascript:void(0);" onclick="abrirNuevaVentana()">registro</a>
+                    <a href="Contacto.html">contacto</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        
+        <div class="contenedor_mayor">
+            <section class="galeria_titulo">
+            <p>registro</p>
+            </section>
+            <form action="">
+                <div class="contenedor">
+                        <div class="contenido-forma">
+                        <label for="nombre">nombre</label>
+                            <input type="text">
+                        </div>
+                        <div class="contenido-forma">
+                        <label for="apellido">apellido</label>
+                        <input type="text">
+                        </div>
+                        <div class="contenido-forma">
+                        <label for="condicion">correo electronico</label>
+                        <input type="text">
+                        </div>
+                        <div class="contenido-forma">
+                        <label for="condicion">cedula</label>
+                        <input type="text">
+                        </div>
+                        <div class="contenido-forma">
+                        <label for="telefono">telefono movil</label>
+                        <input type="number">
+                        </div>
+                        <div class="contenido-forma">
+                        <label for="telefono">telefono convencional</label>
+                        <input type="number">
+                        </div>
+                <input id="enviar-registro" type="submit" value="Enviar">  
+                </div>
+                
+            </form>            
+        </div>
+    </main>
+
+    <footer>
+        <div class="pie-pagina">
+            <div>
+                <a href="https://www.facebook.com/"><img src="../img/iconos/facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/"><img src="../img/iconos/instagram.png" alt="instagram"></a>
+                <a href="https://web.whatsapp.com/"><img src="../img/iconos/logotipo-grande-de-whatssapp.png"
+                        alt="whatssapp"></a>
+                <p></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="../js/registro.js"></script>
+</html>
