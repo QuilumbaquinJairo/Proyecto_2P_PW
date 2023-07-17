@@ -71,6 +71,7 @@ body::after {
     background-color: white;
     display: flex;
     flex-direction: column;
+    width: 1200px;
     margin: 0 auto 8rem auto;
     border-radius: 20px;
 }
@@ -225,3 +226,9 @@ span {
     height: 166px;
     margin-right: 2rem;
 }
+
+@media (max-width: 768px) {
+    .contenedor {
+        background-color: aqua;
+    }
+  }
