@@ -1,28 +1,18 @@
 /*------------------cabecera---------------------*/
 
 .cabecera {
-    position: fixed;
     background-color: white;
     display: flex;
     justify-content: space-between;
-    width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     z-index: 999; /* Agrega una alta z-index para asegurarte de que la barra de navegación esté en primer plano */
+    align-items: center;
+    padding: 0px 50px;
   }
   
-  .logoimg {
-    margin-left: 40px;
-    padding: 10px;
-  }
-  
-  .navbar {
-    height: fit-content;
-    margin: 1rem;
-    padding: 13px 10px;
-  }
   
   .navbar a {
-  padding: 0 1rem;
+  padding: 0 10px;
   width: max-content;
   text-transform: uppercase;
   text-decoration: none;
@@ -33,10 +23,63 @@
   transition: transform 0.3s; /* Agrega una transición suave para el cambio de escala */
 }
 
-.navbar a:hover {
+.navbar a:hover, .mostrar-menu:hover, .esconder-menu:hover {
   color: blueviolet;
   transform: scale(1.05); /* Incrementa la escala del texto al pasar el mouse */
 }
+
+.mostrar-menu, .esconder-menu {
+  font-size: 30px;
+  display: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.mostrar-menu {
+  order:1;
+}
+
+#check {
+  display: none;
+}
+
+/*---------------------Responsive---------------------------*/
+@media(max-width: 768px){
+    /*Header*/
+    .mostrar-menu, .esconder-menu{
+        display: block;
+    }
+
+    .navbar{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        right: 100%;
+        top: 0;
+        padding: 100px 0px;
+        text-align: center;
+        transition: 0.8s;
+        z-index: 10000;
+    }
+    
+    .navbar a{
+        display: block;
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    #check:checked ~ .navbar{
+        right: 0;
+    }
+}
+
 /*---------------------Estilo del cuerpo---------------------------*/
 
 .contenedor{
