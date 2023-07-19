@@ -225,9 +225,3 @@ span {
     height: 166px;
     margin-right: 2rem;
 }
-
-@media (max-width: 768px) {
-    .contenedor {
-        background-color:beige;
-    }
-}
