@@ -1,245 +1,190 @@
-/*Cambio mio*/
-/*------------------cabecera---------------------*/
+body {
+    position: relative;
+    margin-top: 60px; /* Añadido para compensar la altura de la barra de navegación */
+}
+
+body::after {
+    content: "";
+    background: linear-gradient(rgba(70, 35, 122, 0.6), rgba(70, 35, 122, 0.6)), url("../img/Fondos/formulario.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
 
 .cabecera {
-    position: fixed;
-    background-color: white;
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    z-index: 999; /* Agrega una alta z-index para asegurarte de que la barra de navegación esté en primer plano */
-  }
-  
-  .logoimg {
-    margin-left: 40px;
+    align-items: center;
     padding: 10px;
-  }
-  
-  .navbar {
+    background-color: white; /* Cambiado a blanco */
+    position: fixed; /* Agregado */
+    top: 0; /* Agregado */
+    width: 100%; /* Agregado */
+    z-index: 9999; /* Agregado para asegurar que esté en el nivel más alto */
+}
+
+.logoimg {
+    margin-left: 30px;
+    padding: 6px;
+}
+
+.navbar {
+    display: flex;
     height: fit-content;
     margin: 1rem;
-    padding: 13px 10px;
-  }
-  
-  .navbar a {
-  padding: 0 1rem;
-  width: max-content;
-  text-transform: uppercase;
-  font-size: 20px;
-  font-family: 'Roboto', 'Courier New', Courier, monospace;
-  color: #46237A;
-  z-index: 1;
-  transition: transform 0.3s; /* Agrega una transición suave para el cambio de escala */
+    padding: 12px 8px;
+    z-index: 9999; /* Agregado para asegurar que esté en el nivel más alto */
+}
+
+.navbar a {
+    padding: 0 1rem;
+    width: max-content;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Inter', 'Courier New', Courier, monospace;
+    color: #46237A;
+    z-index: 9999; /* Agregado para asegurar que esté en el nivel más alto */
+    transition: transform 0.3s; /* Agrega una transición suave para el cambio de escala */
 }
 
 .navbar a:hover {
-  color: blueviolet;
-  transform: scale(1.05); /* Incrementa la escala del texto al pasar el mouse */
-}
-/*---------------------Estilo del cuerpo---------------------------*/
-
-.contenedor{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: rgba(70, 35, 122, 0.6);
-    
+    color: blueviolet;
+    transform: scale(1.05); /* Incrementa la escala del texto al pasar el mouse */
 }
 
-.contenedor2{
-	display: grid;
-	grid-template-columns:auto;
-	background-color: rgba(70, 35, 122, 0.6);
+.titulo-contacto {
+    text-align: center;
+    margin-top: 60px; /* Añadido para compensar la altura de la barra de navegación */
+    margin-bottom: 40px;
 }
 
-.contenedor3{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-	align-items: center;
-	align-content: center;
-	align-self: center;
-	text-align: center;
-	text-align-last: center;
-}
-
-.fondo-principal{
-    background-color: rgba(70, 35, 122, 0.6);
-    mix-blend-mode: overlay;
-}
-
-.textologo{
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    justify-content: space-around;
-    color: white;
-    font-size: 70px;
-    font-family: 'Roboto','Courier New', Courier, monospace;
-}
-
-.textologo {
-    position: relative;
-    z-index: 2; /* Establece un z-index mayor para el contenedor */
-  }
-  
-  .textologo button {
-    width: 236px;
-    height: 72px;
-    border: none;
-    background-color: #46237A;
-    border-radius: 20px;
-    color: white;
-    font-size: 20px;
+.titulo-contacto h1 {
+	font-size: 60px;
+    font-family: 'Inter','Courier New', Courier, monospace;
     text-transform: uppercase;
-    position: absolute;
-    top: 33rem;
-    left: 20rem;
-    z-index: 1; /* Establece un z-index menor para el botón */
-  }
-  
-
-.textologo p {
-    transition: transform 500ms;
-  }
-  
-  .textologo p:hover {
-    transform: scale(1.02);
-  }
-
-.textologo2{
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    justify-content: space-around;
-    color:blueviolet;
-    font-size: 70px;
-    font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
-}
-.textologo2 {
-    position: relative;
-    z-index: 2; /* Establece un z-index mayor para el contenedor */
-  }
-  
-.sinEspacio{
-	width: 196px;
-	height: 40px;
-	align-self: center;
-}
-
-  .textologo2 button {
-    width: 196px;
-    height: 52px;
-    border: none;
-    background-color: #46237A;
-    border-radius: 20px;
+    font-weight: 700;
     color: white;
-    font-size: 20px;
-    text-transform: uppercase;
-    position:static;
-    top: 13rem;
-    left: 13rem;
-    z-index: 2; /* Establece un z-index menor para el botón */
-  }
-  
-
-.textologo2 p {
-    transition: transform 500ms;
-  }
-  
-  .textologo2 p:hover {
-    transform: scale(1.04);
-  }
-
-.textoIzquierda{
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    justify-content:flex-start;
-    color:darkviolet;
-    font-size: 20px;
-    font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 }
 
-.margenTabla{
-	border-bottom-color: indigo;
-	border-radius: 10px;
-	vertical-align: baseline;
-	border: 1;
-}
-/*--------------pie-de pagina------------*/
 
-.pie-pagina{
-    height: 7rem;
+.contenedor2 {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Añadido para centrar verticalmente */
+    height: 100vh;
+    margin-top: -120px; /* Ajusta el valor según sea necesario */
+    padding-top: 30px; /* Agregado para crear un espacio en la parte superior */
+    z-index: 1; /* Ajustado para asegurar que esté en un nivel inferior */
 }
 
-.pie-pagina div{
-    margin: auto;
+
+.fondo-principal {
+    background-color: rgba(255, 255, 255, 0.99); /* Cambiado a opacidad 0.8 */
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
+    position: relative; /* Añadido para posicionar el título */
 }
 
-.pie-pagina img{
-    margin: 0 20px;
+.texto-creciente {
+    color: white; /* Cambiado a blanco */
+    font-family: 'Inter', sans-serif;
+    font-size: 48px; /* Aumentado el tamaño de fuente */
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    position: absolute; /* Añadido para posicionar el título */
+    top: -70px; /* Ajusta el valor según sea necesario */
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-/*----------Cambios------------*/
+.texto-creciente2 {
+    color: darkmagenta;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    transition: font-size 0.2s; /* Agrega una transición suave para el cambio de tamaño de fuente */
+}
+
+.texto-creciente2:hover {
+    font-size: 25px; /* Aumenta el tamaño de fuente al pasar el mouse */
+}
+
+.mapa {
+    float: left;
+    width: 50%;
+}
+
+.formulario {
+    float: right;
+    width: 45%; /* Reducir el ancho del formulario */
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
 form {
-  width: 300px;
-  
-	font-size: 24px;
-	color:blueviolet;
-    font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+    width: 100%;
+    font-size: 24px;
+    color: blueviolet;
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar los elementos horizontalmente */
 }
 
 label {
-  display: block;
-  margin-bottom: 5px;
-	
+    display: block;
+    margin-bottom: 5px;
+    text-align: center; /* Centrar los títulos */
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-  width: 100%;
-  height: 28px;
-  padding: 5px;
-  border-radius: 5px;
-	background-color: rgba(200, 180, 230, 0.6);
+    width: 100%;
+    height: 28px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(200, 180, 230, 0.6);
 }
 
 input[type="submit"] {
-  margin-top: 10px;
-  background-color: #4CAF50;
-  color: white;
-  padding: 8px 16px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 input:invalid,
 textarea:invalid {
-  border-color: red;
+    border-color: red;
 }
 
-.texto-creciente {
-	color:blueviolet;
-    font-size: 70px;
-    font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
-    transition: transform 0.3s; 
+
+.pie-pagina {
+    background-color: #000;
+    padding: 10px;
+    text-align: center;
 }
 
-.texto-creciente:hover {
-  transform: scale(1.04); 
+.pie-pagina a {
+    margin-right: 10px;
 }
 
-.texto-creciente2 {
-	color:blueviolet;
-    font-size: 24px;
-    font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
-    transition: transform 0.3s; 
+.pie-pagina img {
+    width: 30px;
+    height: 30px;
 }
 
-.texto-creciente2:hover {
-  transform: scale(1.04); 
-}
