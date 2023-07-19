@@ -10,6 +10,7 @@
 	<link rel="preload" as="style" href="../css/estilo.css">
 
     <link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="../css/estilo.css">
     
@@ -23,14 +24,21 @@
         <div class="logoimg">
             <a href="../index.html"><img src="../img/Logos/Logo_9.png" alt="logo-empresa"></a>
         </div>
-        <div class="navbar">
+        <input type="checkbox" id="check">
+            <label for="check" class="mostrar-menu">
+                &#8801
+            </label>
+		<div class="navbar">
             <nav>
                 <a href="../index.html">inicio</a>
                 <a href="../html/Equipo.html">equipo</a>
                 <a href="../html/Galeria.html">galeria</a>
                 <a href="javascript:void(0);" onclick="abrirNuevaVentana()">registro</a>
                 <a href="../html/Contacto.html">contacto</a>
-            </nav>
+				<label for="check" class="esconder-menu">
+					&#215
+				</label>
+			</nav>
         </div>
     </div>    
     </header>
