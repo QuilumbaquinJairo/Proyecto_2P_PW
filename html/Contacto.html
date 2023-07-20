@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
-    
-	<link rel="stylesheet" href="../css/reset.css">
-	<link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/estilo.css">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="../css/reset.css">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+
     <title>Contactos</title>
     <link rel="icon" type="image/png" href="../img/iconos/Logo_solo_1-removebg-preview.ico">
 </head>
@@ -21,6 +24,10 @@
             <div class="logoimg">
                 <a href="../index.html"><img src="../img/Logos/Logo_9.png" alt="logo-empresa"></a>
             </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="mostrar-menu">
+                &#8801
+            </label>
             <div class="navbar">
                 <nav>
                     <a href="../index.html">inicio</a>
@@ -28,62 +35,64 @@
                     <a href="Galeria.html">galeria</a>
                     <a href="Registro.html">registro</a>
                     <a href="Contacto.html">contacto</a>
+                    <label for="check" class="esconder-menu">
+                        &#215
+                    </label>
                 </nav>
             </div>
         </div>
     </header>
-    <br><br><br><br><br><br><br>
-    <div class="titulo-contacto">
-    <h1>CONTACTOS</h1>
-    </div>
-    <br><br>
+
     <main>
-    <div class="contenedor2">
-        <div class="fondo-principal">
-            <div><br><br>
-                <center>
-                    <p class="texto-creciente2">Póngase en contacto con nosotros o visítanos en nuestra sucursal<br><br></p>
-                </center><br>
-            </div>
-            <div class="mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7964732009095!2d-78.48448620305913!3d-0.1896088422530823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59bd4e63add3b%3A0x7a36d6996076ee6a!2sMaserati!5e0!3m2!1ses!2sec!4v1686078490468!5m2!1ses!2sec" width="600" height="440" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="formulario">
-                <center>
-                <p style="color:darkslateblue; font-size: 30px; font-family:Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'">Envíanos un Mensaje</p>
-                </center>
+        <div class="contenedor_mayor">
+            <section class="titulo-contacto">
+                <p class="lineUp">CONTACTOS</p>
+            </section>
+            <div class="contenedor">
+                <div class="datop">
+                    <p>Póngase en contacto con nosotros o visítanos en nuestra sucursal</p>
+                </div>
+                <div class="contenedor2">
+                    <div class="mapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7964732009095!2d-78.48448620305913!3d-0.1896088422530823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59bd4e63add3b%3A0x7a36d6996076ee6a!2sMaserati!5e0!3m2!1ses!2sec!4v1686078490468!5m2!1ses!2sec"
+                        width="600" height="440" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                </div>
+                <div class="contenedor2">
+                    <div class="formulario">
+                        <p>Envíanos un Mensaje</p>
                     <form id="myForm">
-                    <label class="texto-creciente2" for="name"><br>Nombre:</label>
-                    <input type="text" id="name" required>
+                        <label class="texto-creciente2" for="name"><br>Nombre:</label>
+                        <input type="text" id="name" required>
 
-                    <label class="texto-creciente2" for="email"><br><br>Email:</label>
-                    <input type="email" id="email" required>
+                        <label class="texto-creciente2" for="email"><br><br>Email:</label>
+                        <input type="email" id="email" required>
 
-                    <label class="texto-creciente2" for="message"><br><br>Mensaje:</label>
-                    <textarea id="message" required></textarea>
-                    <br>
-                    <input type="submit" value="Enviar">
-                </form>
+                        <label class="texto-creciente2" for="message"><br><br>Mensaje:</label>
+                        <textarea id="message" required></textarea>
+                        <br>
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+                </div>
             </div>
         </div>
-    </div>
-</main>
-    <br><br>
-    
-    
-    <br>
-    
-    <br><br>
-    
+        </div>
+
+    </main>
+
     <footer>
         <div class="pie-pagina">
             <div>
                 <a href="https://www.facebook.com/"><img src="../img/iconos/facebook.png" alt="facebook"></a>
                 <a href="https://www.instagram.com/"><img src="../img/iconos/instagram.png" alt="instagram"></a>
-                <a href="https://web.whatsapp.com/"><img src="../img/iconos/logotipo-grande-de-whatssapp.png" alt="whatssapp"></a
-			</div>
-        </div>
+                <a href="https://web.whatsapp.com/"><img src="../img/iconos/logotipo-grande-de-whatssapp.png"
+                        alt="whatssapp"></a>
+            </div>
     </footer>
 </body>
 <script src="../js/registro.js"></script>
+
 </html>

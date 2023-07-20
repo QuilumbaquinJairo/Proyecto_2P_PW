@@ -136,6 +136,7 @@ body::after {
     .contenedor {
         grid-template-columns: repeat(1, 1fr);
         margin: 0 auto 8rem auto;
+        width: 92%;
     }
 
     .contenedor_mayor {
