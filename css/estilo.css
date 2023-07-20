@@ -1,8 +1,14 @@
 body {
+	font-family: 'Inter', sans-serif;
     position: relative;
     margin-top: 60px; /* Añadido para compensar la altura de la barra de navegación */
 }
 
+/* Media queries para hacer el diseño responsive */
+@media screen and (max-width: 768px) {
+    /* Puedes agregar aquí los estilos para ajustar el diseño en dispositivos más pequeños */
+    /* Por ejemplo, cambiar el tamaño de los elementos, ajustar el padding o margen, etc. */
+}
 body::after {
     content: "";
     background: linear-gradient(rgba(70, 35, 122, 0.6), rgba(70, 35, 122, 0.6)), url("../img/Fondos/formulario.jpg");
@@ -17,46 +23,44 @@ body::after {
     z-index: -1;
 }
 
-.cabecera {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: white; /* Cambiado a blanco */
-    position: fixed; /* Agregado */
-    top: 0; /* Agregado */
-    width: 100%; /* Agregado */
-    z-index: 9999; /* Agregado para asegurar que esté en el nivel más alto */
-}
-
 .logoimg {
     margin-left: 30px;
     padding: 6px;
 }
 
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    height: 40px; /* Ajusta la altura del menú */
+}
+
 .navbar {
     display: flex;
-    height: fit-content;
-    margin: 1rem;
-    padding: 12px 8px;
-    z-index: 9999; /* Agregado para asegurar que esté en el nivel más alto */
+    align-items: center;
 }
 
 .navbar a {
-    padding: 0 1rem;
-    width: max-content;
+    padding: 0 15px; /* Aumenta el espacio entre las opciones */
     text-transform: uppercase;
     text-decoration: none;
     font-size: 20px;
-    font-family: 'Inter', 'Courier New', Courier, monospace;
+    font-family: 'Inter', sans-serif;
     color: #46237A;
-    z-index: 9999; /* Agregado para asegurar que esté en el nivel más alto */
-    transition: transform 0.3s; /* Agrega una transición suave para el cambio de escala */
+    z-index: 1;
+    transition: transform 0.3s;
 }
 
-.navbar a:hover {
-    color: blueviolet;
-    transform: scale(1.05); /* Incrementa la escala del texto al pasar el mouse */
+.navbar a:hover, .mostrar-menu:hover, .esconder-menu:hover {
+  color: blueviolet;
+  transform: scale(1.05); /* Incrementa la escala del texto al pasar el mouse */
 }
 
 .titulo-contacto {
@@ -172,19 +176,18 @@ textarea:invalid {
     border-color: red;
 }
 
-
-.pie-pagina {
-    background-color: #000;
-    padding: 10px;
-    text-align: center;
+.pie-pagina{
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    background-color: white;
 }
 
-.pie-pagina a {
-    margin-right: 10px;
+.pie-pagina div{
+    margin: auto;
 }
 
-.pie-pagina img {
-    width: 30px;
-    height: 30px;
+.pie-pagina img{
+    margin: 0 20px;
 }
 
