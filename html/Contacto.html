@@ -14,6 +14,18 @@
     
     <title>Contactos</title>
     <link rel="icon" type="image/png" href="../img/iconos/Logo_solo_1-removebg-preview.ico">
+	<style>
+        /* Estilos para el título */
+        .titulo-contacto h1 {
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: opacity 1s, transform 1s;
+        }
+        .titulo-contacto.show h1 {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
 </head>
 
 <body>
@@ -81,10 +93,18 @@
             <div>
                 <a href="https://www.facebook.com/"><img src="../img/iconos/facebook.png" alt="facebook"></a>
                 <a href="https://www.instagram.com/"><img src="../img/iconos/instagram.png" alt="instagram"></a>
-                <a href="https://web.whatsapp.com/"><img src="../img/iconos/logotipo-grande-de-whatssapp.png" alt="whatssapp"></a
-			</div>
+                <a href="https://web.whatsapp.com/"><img src="../img/iconos/logotipo-grande-de-whatssapp.png"
+                        alt="whatssapp"></a>
+                <p></p>
+            </div>
         </div>
     </footer>
+			<script>
+        window.onload = function() {
+            const tituloContacto = document.querySelector('.titulo-contacto');
+            tituloContacto.classList.add('show');
+        };
+    </script>
 </body>
 <script src="../js/registro.js"></script>
 </html>
