@@ -69,8 +69,9 @@ body::after {
 
 .contenedor {
     background-color: white;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr;
     align-items: center;
     margin: 0 auto 8rem auto;
     width: 90%;
@@ -88,6 +89,8 @@ body::after {
     text-align: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
 .contenedor2{
@@ -116,9 +119,8 @@ body::after {
 }
 
 .formulario {
-    padding: 20px;
-    flex-basis: 48%; /* Establece el ancho de cada parte dentro del contenedor2 */
-    box-sizing: border-box;
+    
+    width: 100%;
 }
 
 .formulario p{
