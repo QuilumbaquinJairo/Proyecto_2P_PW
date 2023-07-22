@@ -1,5 +1,5 @@
 /*------------------cabecera---------------------*/
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500&display=swap');
 .cabecera {
   background-color: white;
   display: flex;
@@ -10,7 +10,6 @@
   align-items: center;
   padding: 0px 50px;
 }
-
 
 .navbar a {
   padding: 0 10px;
