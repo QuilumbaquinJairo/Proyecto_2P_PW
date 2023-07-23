@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // Aquí, normalmente enviarías los datos del formulario al servidor
       // usando fetch o una librería para manejar peticiones HTTP.
-      // Como ejemplo, aquí mostraremos una notificación de éxito.
+      // Como ejemplo, aquí mostraremos una notificación de éxito y luego limpiaremos el formulario.
       showNotification('Información enviada correctamente');
 
       // Limpia los campos del formulario después de enviarlo
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function showNotification(message) {
     const notification = document.createElement('div');
-    notification.classList.add('notification'); // Agrega esta línea
+    notification.classList.add('notification');
     notification.textContent = message;
     document.body.appendChild(notification);
 
