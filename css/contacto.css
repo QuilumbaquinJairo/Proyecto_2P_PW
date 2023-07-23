@@ -27,6 +27,17 @@ body::after {
 
 }
 
+/* Estilos para el título */
+        .titulo-contacto h1 {
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: opacity 1s, transform 1s;
+        }
+        .titulo-contacto.show h1 {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
 .titulo-contacto {
     display: flex;
     justify-content: center;
