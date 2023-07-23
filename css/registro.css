@@ -134,6 +134,7 @@ body::after {
         width: 92%;
         margin: 0 auto;
         padding: 0;
+        margin-bottom: 2rem;
     }
 
     .contenedor label {
