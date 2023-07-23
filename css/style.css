@@ -8,10 +8,14 @@
   z-index: 999;
   /* Agrega una alta z-index para asegurarte de que la barra de navegación esté en primer plano */
   align-items: center;
-  padding: 0px 50px;
+  padding: 0 50px;
 }
 
-.navbar a {
+.navbar{
+  list-style: none;
+}
+
+.navbar a{
   padding: 0 10px;
   width: max-content;
   text-transform: uppercase;
@@ -24,7 +28,7 @@
   /* Agrega una transición suave para el cambio de escala */
 }
 
-.navbar a:hover, .mostrar-menu:hover, .esconder-menu:hover {
+.navbar >a:hover, .mostrar-menu:hover, .esconder-menu:hover {
   color: blueviolet;
   transform: scale(1.05);
   /* Incrementa la escala del texto al pasar el mouse */
@@ -60,7 +64,7 @@
     background-color: white;
     right: 100%;
     top: 0;
-    padding: 100px 0px;
+    padding: 100px 0;
     text-align: center;
     transition: 0.8s;
     z-index: 10000;
@@ -156,13 +160,11 @@
     text-align: center;
   }
 
-  .textologo button {
+  .textologo button{
     position: relative;
-    top: 0;
-    left: 0;
     margin: 0 auto;
     top: 40%;
-    left: 0%;
+    left: 0;
     z-index: 1;
   }
 }
