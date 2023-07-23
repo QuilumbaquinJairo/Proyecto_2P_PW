@@ -1,6 +1,6 @@
 /*------------------cabecera---------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500&display=swap');
-.cabecera {
+.cabecera{
   background-color: white;
   display: flex;
   justify-content: space-between;
