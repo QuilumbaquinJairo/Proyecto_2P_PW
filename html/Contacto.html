@@ -1,23 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Contactos</title>
     <link rel="icon" type="image/png" href="../img/iconos/Logo_solo_1-removebg-preview.ico">
-	<style>
-        /* Estilos para el título */
-        .titulo-contacto h1 {
-            opacity: 0;
-            transform: translateY(-20px);
-            transition: opacity 1s, transform 1s;
-        }
-        .titulo-contacto.show h1 {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    </style>
+
 </head>
 
 <body>
@@ -44,8 +33,8 @@
                         <p>Envíanos un Mensaje</p>
                     <form id="myForm">
                         <label class="texto-creciente2" for="name"><br>Nombre:</label>
-                        <input type="text" id="name" required>
-
+                        <input type="text" pattern="[A-Za-z\s]+" id="name" required>
+						
                         <label class="texto-creciente2" for="email"><br><br>Email:</label>
                         <input type="email" id="email" required>
 
@@ -58,11 +47,11 @@
                 </div>
             </div>
         </div>
-        </div>
+        
 
     </main>
 
 </body>
-<script src="../js/registro.js"></script>
+	<script src="../js/contacto.js"></script>
 
 </html>
