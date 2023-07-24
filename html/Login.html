@@ -3,8 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Log In</title>
+    <link rel="preload" href="../css/login.css">
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
 </head>
 <body>
+    <div class="contenedor_login">
+        <div class="login_container">
+            <p>log in</p>
+            <div class="log_fields">
+                <img class="icono_img" src="../img/iconos/usuario%20(1).png" alt="usuario_icono">
+                <input type="text" placeholder="usuario">
+            </div>
+            <div class="log_fields">
+                <img class="icono_img" src="../img/iconos/cerrar.png" alt="password_icono">
+                <input type="password" placeholder="password">
+            </div>
+            <button class="bt_login glow-on-hover" type="submit">ingresar</button>
+        </div>
+        <div class="registro_container">
+            <p>bienvenido</p>
+            <div class="login_registro">
+            <p class="btn_parrafo">aun no tienes una cuenta?</p>
+            <button id="btnRegistro" class="bt_registro glow-on-hover" type="submit" onclick="registro()">registrarse</button>
+            </div>
+        </div>
 
+    </div>
 </body>
+<script src="../js/registro.js"></script>
 </html>
