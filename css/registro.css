@@ -68,7 +68,7 @@ body::after {
     }
 }
 
-.contenedor {
+.contenedor{
     background-color: white;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -118,6 +118,15 @@ body::after {
     grid-column-end: 3;
     align-self: center;
     justify-self: center;
+    cursor: pointer;
+}
+
+.contenedor_botones{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 /*-------responsivo-------*/
