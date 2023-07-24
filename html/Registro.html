@@ -20,27 +20,27 @@
                 <div class="contenedor">
                         <div class="contenido-forma">
                         <label for="nombre">nombre</label>
-                            <input type="text">
+                            <input type="text" pattern="[A-Za-z]{1,10}" required autofocus>
                         </div>
                         <div class="contenido-forma">
                         <label for="apellido">apellido</label>
-                        <input type="text">
+                        <input type="text" pattern="[A-Za-z]{1,15}" required>
                         </div>
                         <div class="contenido-forma">
                         <label for="condicion">correo electronico</label>
-                        <input type="text">
+                        <input type="text"  pattern="^[a-zA-Z0-9._%+-]+@(gmail|outlook|hotmail|yahoo)\.com$" required>
                         </div>
                         <div class="contenido-forma">
                         <label for="condicion">cedula</label>
-                        <input type="text">
+                        <input type="text" pattern="[0-9]{10}" required>
                         </div>
                         <div class="contenido-forma">
                         <label for="telefono">telefono movil</label>
-                        <input type="number">
+                        <input type="number" pattern="[0-9]{1,10}" required>
                         </div>
                         <div class="contenido-forma">
                         <label for="telefono">telefono convencional</label>
-                        <input type="number">
+                        <input type="number" pattern="[0-9]{1,10}">
                         </div>
                     <div class="contenedor_botones">
                         <input id="enviar-registro" type="submit" value="Regresar">          

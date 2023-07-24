@@ -12,13 +12,13 @@
             <p>log in</p>
             <div class="log_fields">
                 <img class="icono_img" src="../img/iconos/usuario%20(1).png" alt="usuario_icono">
-                <input type="text" placeholder="usuario">
+                <input id="usuario" type="text" placeholder="usuario" autofocus>
             </div>
             <div class="log_fields">
                 <img class="icono_img" src="../img/iconos/cerrar.png" alt="password_icono">
-                <input type="password" placeholder="password">
+                <input id="contrasenia" type="password" placeholder="password">
             </div>
-            <button class="bt_login glow-on-hover" type="submit">ingresar</button>
+            <button class="bt_login glow-on-hover" onclick="registro()">ingresar</button>
         </div>
         <div class="registro_container">
             <p>bienvenido</p>
@@ -31,4 +31,5 @@
     </div>
 </body>
 <script src="../js/registro.js"></script>
+<script src="../js/validacion_login.js"></script>
 </html>
